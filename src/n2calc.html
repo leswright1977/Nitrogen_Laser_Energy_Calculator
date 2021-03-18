@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nitrogen Laser Calculator Les Wright 2021</title>	
+		<style> 
+		label{
+			display: inline-block;
+			float: left;
+			clear: left;
+			width: 150px;
+			padding-right: 10px;
+			text-align: right;
+			margin-top:10px;
+		}
+		input {
+		  display: inline-block;
+		  float: left;
+		  width: 50px;
+		  margin-top:10px;
+		}
+		input[type=text]:focus {
+			background-color: lightblue;
+		}
+		input[type=button] {
+			clear:left;
+			margin-top:10px;
+			width:100%;
+		}
+		fieldset {
+			background-color: #eeeeee;
+			margin-top:50px;
+			width:300px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		legend {
+			  background-color: gray;
+			  color: white;
+			  padding: 5px 10px;
+		}
+		.data{
+			margin-top:10px;
+		}
+		
+		#notice {
+			background-color: #eeeeee;
+			border:1px solid black;
+			margin-top:50px;
+			width:320px;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Nitrogen Laser Power Calculator:</legend>
+				<label for="J">Sensitivity V/J</label>
+				<input type="text" id="J" value="134.3">
+				<label for="mV">Peak voltage mV</label>
+				<input type="text" id="mV" >
+				<label for="ns">Laser Pulse width ns</label>
+				<input type="text" id="ns" value="0.8">
+				<label for="Hz">Repetition rate Hz</label>
+				<input type="text" id="hz" value="1">
+				<input type="button" onClick="calc()" value="Calculate">
+			</fieldset>	
+		</form>
+		<div id="output">
+			<fieldset>
+				<legend>Output:</legend>
+				<div class="data" id="resultuj">Energy: 0.00 uJ</div>
+				<div class="data" id="resultkw">Peak Power: 0.00 kW</div>
+				<div class="data" id="resultav">Average Power: 0.00 mW</div>
+			</fieldset>
+		</div>
+		
+		<div id="notice">
+			<br>Authored by: Les Wright 2021<br>
+			<img src="data:image/png;base64,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" alt="Les'Lab">
+			<br>
+			<a href="https://www.youtube.com/leslaboratory" target="_blank">Visit Les' Lab!<a/>
+
+			<br><br>
+		</div>
+		
+
+		
+		<script>
+			function calc(){
+			var J=document.getElementById('J').value;
+			var V=document.getElementById('mV').value;
+			var ns=document.getElementById('ns').value;
+			var hz=document.getElementById('hz').value;
+			var mV = V/1000;
+
+			var microjoules = (mV/J)*1000000;
+			microjoules = microjoules.toFixed(2);
+			var kw = microjoules/ns;
+			var mw = (microjoules*hz)/1000;
+			mw = mw.toFixed(2);
+
+			document.getElementById('resultuj').innerHTML="Energy: "+microjoules+" uJ";
+			document.getElementById('resultkw').innerHTML="Peak Power: "+kw.toFixed(2)+" kW";
+			document.getElementById('resultav').innerHTML="Average Power: "+mw+" mW";
+			return false
+			}
+		</script>
+	</body>
+</html>
