@@ -1,7 +1,11 @@
 # Nitrogen_Laser_Energy_Calculator
 Nitrogen Laser energy Calculator in JavaScript
 
-This is a simple Nitrogen Laser energy Calculator written in JS.
+Visit my Youtube Channel at: https://www.youtube.com/leslaboratory
+
+This is a simple Nitrogen Laser energy Calculator written in JS. 
+Why JS and not Python or something? Because everyone has a web browser! Not everyone necessarily has Python installed!
+
 Just download the HTML file in src and open with a browser.
 
 It is designed for use with data retreived from Pyroelectric energy sensors such  as the Gentec ED-100A, and Home Made Nitrogen Lasers.
@@ -20,4 +24,4 @@ The repetion rate of the source.
 
 ![Screenshot](screenshot-app.png)
 
-Visit my Youtube Channel at: https://www.youtube.com/leslaboratory
+
