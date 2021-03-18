@@ -3,7 +3,7 @@ Nitrogen Laser energy Calculator in JavaScript
 
 Visit my Youtube Channel at: https://www.youtube.com/leslaboratory
 
-This program and assiciated information is free, but if you have gotten value from these kinds of projects and think they are worth something, please consider donating: https://paypal.me/leslaboratory?locale.x=en_GB
+This program and assiciated information is free for non-commercial use, but if you have gotten value from these kinds of projects and think they are worth something, please consider donating: https://paypal.me/leslaboratory?locale.x=en_GB
 
 This is a simple Nitrogen Laser energy Calculator written in JS. 
 Why JS and not Python or something? Because everyone has a web browser! Not everyone necessarily has Python installed!
