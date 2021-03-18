@@ -20,4 +20,4 @@ The repetion rate of the source.
 
 ![Screenshot](screenshot-app.png)
 
-Visit my Youtube Channel at: [Markdown - Link](#https://www.youtube.com/leslaboratory)
+Visit my Youtube Channel at: https://www.youtube.com/leslaboratory
