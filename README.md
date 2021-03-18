@@ -28,6 +28,8 @@ The repetion rate of the source.
 
 Then hit Calculate!
 
+
+
 Screenshot below:
 
 ![Screenshot](screenshot-app.png)
