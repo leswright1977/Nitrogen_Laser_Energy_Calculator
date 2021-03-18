@@ -19,10 +19,14 @@ First, measure your Laser with a suitable sensor and an Oscilloscope and note th
 Then into the form, simply enter:
 
 The sensitivity of your detector in Volts per Joule. 
+
 The peak voltage read off of an Oscilloscope in mV.
+
 The pulse width of the Laser source in nanoseconds. (TEA Lasers will run at less than <800ps (0.8ns) depending on channel length)
+
 The repetion rate of the source.
 
+Then hit Calculate!
 
 ![Screenshot](screenshot-app.png)
 
