@@ -14,5 +14,5 @@ The pulse width of the Laser source in nanoseconds. (TEA Lasers will run at less
 The repetion rate of the source.
 
 ![Screenshot](scope.png)
-![Screenshot](screenshot.png)
+![Screenshot](screenshot-app.png)
 
