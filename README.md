@@ -1,2 +1,3 @@
-# Nitreogen_Laser_Energy_Calculator
+# Nitrogen_Laser_Energy_Calculator
 Nitrogen Laser energy Calculator in JavaScript
+
